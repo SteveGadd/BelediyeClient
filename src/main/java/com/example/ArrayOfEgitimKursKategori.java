@@ -1,0 +1,67 @@
+
+package com.example;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for arrayOfEgitimKursKategori complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="arrayOfEgitimKursKategori"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="egitimKursKategoriBilgisi" type="{http://belediye.turkiye.gov.tr/v3}egitimKursKategoriType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "arrayOfEgitimKursKategori", propOrder = {
+    "egitimKursKategoriBilgisi"
+})
+public class ArrayOfEgitimKursKategori {
+
+    protected List<EgitimKursKategoriType> egitimKursKategoriBilgisi;
+
+    /**
+     * Gets the value of the egitimKursKategoriBilgisi property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the egitimKursKategoriBilgisi property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getEgitimKursKategoriBilgisi().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link EgitimKursKategoriType }
+     * 
+     * 
+     */
+    public List<EgitimKursKategoriType> getEgitimKursKategoriBilgisi() {
+        if (egitimKursKategoriBilgisi == null) {
+            egitimKursKategoriBilgisi = new ArrayList<EgitimKursKategoriType>();
+        }
+        return this.egitimKursKategoriBilgisi;
+    }
+
+}
